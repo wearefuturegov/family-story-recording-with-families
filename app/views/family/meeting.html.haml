@@ -1,15 +1,15 @@
 %header
   .container
     .full_width
-      %h1 Your meeting with the Taylor family
+      %h1 Your visit with the Taylor family
 
 .container
-  .full_width
+  .breadcrumbs.full_width
     =link_to root_path do
       =fa_icon "chevron-left"
       Return to your cases
 
-  .meeting_details_card.card.full_width
+  .visit_details_card.card.full_width
     %h3
       The Taylor Family -
       = Time.now.strftime("%d/%m/%Y")
@@ -31,7 +31,7 @@
             %p My uncle wants to see the children
 
 
-  .meeting_input_card.card.full_width
+  .visit_input_card.card.full_width
     %h3 Notes
     %hr
     %textarea

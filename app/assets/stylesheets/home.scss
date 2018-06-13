@@ -1,12 +1,16 @@
 .family_list_small, .family_list_large {
   margin-bottom: 60px;
-  padding: 35px 15px;
 
   h2, h3, h4 {
     margin-bottom: 5px;
   }
   .address {
     margin-bottom: 10px;
+  }
+  .edit_link {
+    font-weight: 400;
+    font-size: 14px;
+    margin-left: 5px;
   }
 }
 
@@ -17,4 +21,20 @@
     margin-bottom: 15px;
   }
 
+}
+
+
+
+.codes {
+  ul {
+    li {
+      display: inline-block;
+      padding: 3px 15px;
+      margin-right: 8px;
+      margin-bottom: 5px;
+      margin-top: 5px;
+      background-color: $background-color;
+      border-radius: $base-border-radius;
+    }
+  }
 }

@@ -5,74 +5,84 @@
 
 %section.container
   .family_list_large.card.full_width
-    .two_thirds
-      %h2#meeting_family_name The Taylor Family
+    .inner_container
+      .two_thirds
+        %h2#visit_family_name The Taylor Family
 
-      .codes CP LAC
-      =link_to 'View family details', family_details_path
-    .third
-      .address
-        =fa_icon "home"
-        Flat 12, New Road, N2 1BD
-      %a{href: "tel:07912345678", class: "button phone"}
-        =fa_icon "phone"
-        07912 345678
+        .codes
+          %ul
+            %li CP
+            %li LAC
+        =link_to 'View family details', family_details_path
+      .third
+        .address
+          =fa_icon "home"
+          Flat 12, New Road, N2 1BD
+        %a{href: "tel:07912345678", class: "button phone"}
+          =fa_icon "phone"
+          07912 345678
 
-    .full_width
-      %hr
+      .full_width
+        %hr
 
-      %h3
-        = Time.now.strftime("%d/%m/%Y")
-        14:00 - Your next scheduled visit
-    .half
-      .bold
-        Visit purpose
-        =link_to 'Edit', family_meeting_details_path
-      %ul.default
-        %li Housing
-        %li School attendance
-    .half
-      .bold Family's input
-      %p My uncle wants to see the children
+        %h3
+          Your next scheduled visit -
+          =link_to family_meeting_details_path do
+            = Time.now.strftime("%d/%m/%y")
+            14:00
+      .half
+        .bold
+          Visit purpose
+          %span.edit_link
+            =link_to 'Edit', family_meeting_details_path
+        %ul.default
+          %li Housing
+          %li School attendance
+      .half
+        .bold Family's input
+        %p My uncle wants to see the children
 
-    #meeting_contact.center.full_width
-      %h3 Was there a successful contact?
-      =link_to 'Yes', family_meeting_path, class: 'button'
-      .button#not_successful No
+      #visit_contact.center.full_width
+        %h3 Was there a successful contact?
+        =link_to 'Yes', family_meeting_path, class: 'button'
+        .button#not_successful No
 
   .family_list_small.card.full_width
-    .two_thirds
-      %h3 Another family
-      .codes CP LAC
-      =link_to 'View family details', family_meeting_details_path
-    .third
-      .address
-        =fa_icon "home"
-        Flat 12, New Road, N2 1BD
-      %a{href: "tel:07912345678", class: "phone"}
-        =fa_icon "phone"
-        07912 345678
+    .inner_container
+      .two_thirds
+        %h3 Another family
+        .codes CP LAC
+        =link_to 'View family details', family_meeting_details_path
+      .third
+        .address
+          =fa_icon "home"
+          Flat 12, New Road, N2 1BD
+        %a{href: "tel:07912345678", class: "phone"}
+          =fa_icon "phone"
+          07912 345678
   .family_list_small.card.full_width
-    .two_thirds
-      %h3 Another family
-      .codes CP LAC
-      =link_to 'View family details', family_details_path
-    .third
-      .address
-        =fa_icon "home"
-        Flat 12, New Road, N2 1BD
-      %a{href: "tel:07912345678", class: "phone"}
-        =fa_icon "phone"
-        07912 345678
+    .inner_container
+      .two_thirds
+        %h3 Another family
+        .codes CP LAC
+        =link_to 'View family details', family_details_path
+      .third
+        .address
+          =fa_icon "home"
+          Flat 12, New Road, N2 1BD
+        %a{href: "tel:07912345678", class: "phone"}
+          =fa_icon "phone"
+          07912 345678
   .family_list_small.card.full_width
-    .two_thirds
-      %h3 Another family
-      .codes CP LAC
-      =link_to 'View family details', family_details_path
-    .third
-      .address
-        =fa_icon "home"
-        Flat 12, New Road, N2 1BD
-      %a{href: "tel:07912345678", class: "phone"}
-        =fa_icon "phone"
-        07912 345678
+    .inner_container
+      .two_thirds
+        %h3 Another family
+        .codes CP LAC
+        =link_to 'View family details', family_details_path
+      .third
+        .address
+          =fa_icon "home"
+          Flat 12, New Road, N2 1BD
+        %a{href: "tel:07912345678", class: "phone"}
+          =fa_icon "phone"
+          07912 345678

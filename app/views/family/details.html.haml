@@ -1,4 +1,31 @@
 %header
   .container
     .full_width
-      %h1 Family details
+      %h1 The Taylor Family
+
+.container
+  .breadcrumbs.full_width
+    =link_to root_path do
+      =fa_icon "chevron-left"
+      Return to your cases
+
+  .card.full_width.family_list_large
+    .inner_container
+      .two_thirds
+        %h2#visit_family_name The Taylor Family
+
+        .codes
+          %ul
+            %li CP
+            %li LAC
+      .third
+        .address
+          =fa_icon "home"
+          Flat 12, New Road, N2 1BD
+        %a{href: "tel:07912345678", class: "button phone"}
+          =fa_icon "phone"
+          07912 345678
+
+      .full_width
+        %hr
+        More details of the family would go here

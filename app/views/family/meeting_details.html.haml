@@ -1,4 +1,33 @@
 %header
   .container
     .full_width
-      %h1 Your meeting details
+      %h1 Visit with the Taylor Family
+
+
+.container
+  .breadcrumbs.full_width
+    =link_to root_path do
+      =fa_icon "chevron-left"
+      Return to your cases
+
+  .card.full_width
+    .inner_container
+      .full_width
+        %h3
+          Visit
+          = Time.now.strftime("%d/%m/%y")
+          14:00 with
+          =link_to 'the Taylor family', family_details_path
+      .half
+        .bold
+          Visit purpose
+        %ul.default
+          %li Housing
+          %li School attendance
+      .half
+        .bold Family's input
+        %p My uncle wants to see the children
+
+      .full_width
+        %hr
+        More details about the meeting and the abilty to edit would be on this page
