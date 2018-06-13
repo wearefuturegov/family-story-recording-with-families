@@ -4,75 +4,75 @@
       %h1 My cases
 
 %section.container
-  .family_list_large.full_width
+  .family_list_large.card.full_width
     .two_thirds
-      %h2 The Taylor Family
-      %h3
-        Your next scheduled visit -
-        = Time.now.strftime("%d/%m/%Y")
-        14:00
+      %h2#meeting_family_name The Taylor Family
+
       .codes CP LAC
-      =link_to 'Edit', family_details_path
+      =link_to 'View family details', family_details_path
     .third
       .address
         =fa_icon "home"
         Flat 12, New Road, N2 1BD
-      .button.phone
+      %a{href: "tel:07912345678", class: "button phone"}
         =fa_icon "phone"
         07912 345678
 
     .full_width
       %hr
 
-    .half
       %h3
+        = Time.now.strftime("%d/%m/%Y")
+        14:00 - Your next scheduled visit
+    .half
+      .bold
         Visit purpose
-        =link_to 'Edit', family_details_path
+        =link_to 'Edit', family_meeting_details_path
       %ul.default
         %li Housing
         %li School attendance
     .half
-      %h3 Family's input
+      .bold Family's input
       %p My uncle wants to see the children
 
-    .center.full_width
+    #meeting_contact.center.full_width
       %h3 Was there a successful contact?
       =link_to 'Yes', family_meeting_path, class: 'button'
       .button#not_successful No
 
-  .family_list_small.full_width
-    .half
+  .family_list_small.card.full_width
+    .two_thirds
       %h3 Another family
       .codes CP LAC
-      =link_to 'Edit', family_meeting_details_path
-    .half
+      =link_to 'View family details', family_meeting_details_path
+    .third
       .address
-        =fa_icon "house"
+        =fa_icon "home"
         Flat 12, New Road, N2 1BD
-      .button.phone.secondary
+      %a{href: "tel:07912345678", class: "phone"}
         =fa_icon "phone"
         07912 345678
-  .family_list_small.full_width
-    .half
+  .family_list_small.card.full_width
+    .two_thirds
       %h3 Another family
       .codes CP LAC
-      =link_to 'Edit', family_details_path
-    .half
+      =link_to 'View family details', family_details_path
+    .third
       .address
-        =fa_icon "house"
+        =fa_icon "home"
         Flat 12, New Road, N2 1BD
-      .button.phone.secondary
+      %a{href: "tel:07912345678", class: "phone"}
         =fa_icon "phone"
         07912 345678
-  .family_list_small.full_width
-    .half
+  .family_list_small.card.full_width
+    .two_thirds
       %h3 Another family
       .codes CP LAC
-      =link_to 'Edit', family_details_path
-    .half
+      =link_to 'View family details', family_details_path
+    .third
       .address
-        =fa_icon "house"
+        =fa_icon "home"
         Flat 12, New Road, N2 1BD
-      .button.phone.secondary
+      %a{href: "tel:07912345678", class: "phone"}
         =fa_icon "phone"
         07912 345678

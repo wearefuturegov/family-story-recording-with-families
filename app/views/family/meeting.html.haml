@@ -1,2 +1,44 @@
-%h1 Family#index
-%p Find me in app/views/family/index.html.haml
+%header
+  .container
+    .full_width
+      %h1 Your meeting with the Taylor family
+
+.container
+  .full_width
+    =link_to root_path do
+      =fa_icon "chevron-left"
+      Return to your cases
+
+  .meeting_details_card.card.full_width
+    %h3
+      The Taylor Family -
+      = Time.now.strftime("%d/%m/%Y")
+      14:00
+
+    .accordion
+      .accord-single
+        .accord-toggle
+          Visit details
+          =fa_icon "chevron-down"
+        .accord-cont.inner_container
+          .half
+            .bold Visit purpose
+            %ul.default
+              %li Housing
+              %li School attendance
+          .half
+            .bold Family's input
+            %p My uncle wants to see the children
+
+
+  .meeting_input_card.card.full_width
+    %h3 Notes
+    %hr
+    %textarea
+
+    %br
+    %br
+
+    %h3 Agreed actions
+    %hr
+    .button Add action
