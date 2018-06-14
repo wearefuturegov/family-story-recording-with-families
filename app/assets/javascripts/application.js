@@ -13,5 +13,7 @@
 //= require jquery
 //= require jquery-ui
 //= require jquery_ujs
+//= require trumbowyg
+//= require trumbowyg_upload
 //= require geff/accordion
 //= require public
