@@ -19,3 +19,20 @@
     margin-top: 0;
   }
 }
+
+.single_action {
+  margin-bottom: 10px;
+  input {
+    display: inline-block;
+    box-shadow: none;
+  }
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+    margin-bottom: -6px;
+    border: 2px solid $primary-color;
+  }
+}

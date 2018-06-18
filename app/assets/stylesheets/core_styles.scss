@@ -38,3 +38,11 @@ h4{
 .breadcrumbs {
   margin-bottom: 25px;
 }
+
+@include mobile {
+  .inner_container {
+    margin-left: -10px;
+    margin-right: -10px;
+    width: calc(100% + 20px);
+  }
+}

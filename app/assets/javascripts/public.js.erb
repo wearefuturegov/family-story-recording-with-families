@@ -19,7 +19,17 @@ $(document).ready(function() {
     }
   });
 
-  console.log("<%= asset_path('wysiwyg_icons.svg') %>");
+
+
+
+
+$('#add_action').click(function() {
+  var action = '<div class="single_action"><input type="text"></div>';
+  $('#actions_container').append(action);
+});
+
+
+
 
   $('#not_successful').click(function(){
 
