@@ -42,6 +42,8 @@ gem 'sass-rails'
 # DB
 gem 'pg'
 
+gem 'webpacker'
+
 # gem 'geff', git: 'https://github.com/wearefuturegov/geff.git'
 if ENV['GEFF_DEV']
   gem 'geff', path: '../geff'
