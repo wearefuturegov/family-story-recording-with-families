@@ -30,6 +30,15 @@
       border-color: $primary-color;
     }
   }
+  .delete.button {
+    margin-left: 5px;
+    padding: 10px 15px;
+    vertical-align: top;
+    background-color: rgba($red, 0.7);
+    &:hover {
+      background-color: rgba($red, 1);
+    }
+  }
   select {
     display: inline-block;
     width: auto;
