@@ -14,6 +14,8 @@
       The Taylor Family -
       = Time.now.strftime("%d/%m/%Y")
       14:00
+      %span.edit_link
+        =link_to 'Edit', family_meeting_details_path
 
     .accordion
       .accord-single
@@ -32,11 +34,10 @@
 
 
   .visit_input_card.card.full_width
-    %h3 Notes
+    %h3 Visit Notes
     %hr
     #trumbowyg
 
-    %br
     %br
 
     %h3 Agreed actions

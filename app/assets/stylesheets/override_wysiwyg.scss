@@ -1,0 +1,22 @@
+@include mobile {
+  .trumbowyg-modal {
+    .trumbowyg-modal-box {
+      width: 100%;
+
+      .trumbowyg-modal-title {
+        font-size: 18px;
+      }
+      .trumbowyg-input-infos {
+        font-size: 9px;
+      }
+      input[type=file] {
+        font-size: 10px;
+        line-height: 22px;
+      }
+      .trumbowyg-modal-button {
+        line-height: 15px;
+        font-size: 14px;
+      }
+    }
+  }
+}
