@@ -34,10 +34,10 @@ gem 'jquery-rails'
 gem 'jquery-ui-rails'
 gem 'sass-rails'
 
-gem 'simple_form'
+# gem 'simple_form'
 
 # Use Uglifier as compressor for JavaScript assets
-gem 'uglifier'
+# gem 'uglifier'
 
 # DB
 gem 'pg'
