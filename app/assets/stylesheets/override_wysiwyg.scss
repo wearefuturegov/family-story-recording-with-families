@@ -20,3 +20,27 @@
     }
   }
 }
+
+.trumbowyg-modal {
+  .trumbowyg-modal-box {
+    .trumbowyg-modal-title {
+      font-size: 20px;
+    }
+    .trumbowyg-input-infos {
+      font-size: 12px;
+      height: 29px;
+      line-height: 27px;
+    }
+    input[type=file] {
+      font-size: 12px;
+      line-height: 22px;
+    }
+    .trumbowyg-modal-button {
+      line-height: 14px;
+      font-size: 15px;
+    }
+    label input {
+      height: 29px;
+    }
+  }
+}

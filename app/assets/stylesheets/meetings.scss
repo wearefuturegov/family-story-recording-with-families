@@ -25,6 +25,24 @@
   input {
     display: inline-block;
     box-shadow: none;
+    &:focus {
+      box-shadow: none;
+      border-color: $primary-color;
+    }
+  }
+  select {
+    display: inline-block;
+    width: auto;
+    height: 36px;
+    vertical-align: top;
+    margin-right: 5px;
+    background: transparent;
+    width: 75px;
+    -webkit-border-radius: 0px;
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
   }
   &:before {
     content: "";
