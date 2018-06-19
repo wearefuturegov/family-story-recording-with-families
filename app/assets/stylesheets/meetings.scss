@@ -85,6 +85,15 @@
 
 
 .location_choice {
+  &.not_edit {
+    display: inline-block;
+    padding: 3px 10px;
+    border: 1px solid rgba($black, 0.2);
+    border-radius: $base-border-radius;
+    &:hover {
+      border: 1px solid rgba($black, 0.5);
+    }
+  }
   .content {
     cursor: pointer;
   }
@@ -104,17 +113,45 @@
 
 .visit_people {
   .single_person {
+    margin-bottom: 10px;
     .img, .details, .delete {
       display: inline-block;
       vertical-align: middle;
     }
-    .details {
-      .name {
+    .delete {
+      border-radius: 50%;
+      padding: 5px 7px;
+      margin-left: 50px;
 
-      }
-      .relation {
-        
+      @include mobile {
+        margin-left: 0;
+        padding: 3px 5px;
+        font-size: 13px;
       }
     }
+    .img img {
+      vertical-align: middle;
+    }
+    .details {
+      margin: 0px;
+      margin-left: 5px;
+      min-width: 185px;
+      @include mobile {
+        min-width: 165px;
+      }
+      .relation {
+        opacity: 0.5;
+        margin-top: -7px;
+      }
+    }
+  }
+  .breaker {
+    height: 1px;
+    background-color: rgba($black, 0.1);
+    max-width: 300px;
+    margin-left: 2px;
+    width: 100%;
+    display: block;
+    margin-bottom: 10px;
   }
 }

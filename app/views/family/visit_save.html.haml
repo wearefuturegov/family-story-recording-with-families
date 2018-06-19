@@ -32,43 +32,7 @@
             .bold Family's input
             %p My uncle wants to see the children
 
-  .visit_details_card.card.full_width
-    %h3 About this visit
-    %hr
-    .inner_container
-      .half
-        %label Where was this visit?
-        .location_choice
-          .content
-            =fa_icon 'home'
-            %span The Taylor's home
-            %span.edit Edit
-          %input{value: "The Taylor's home"}
-      .half
-        %label When was this visit?
-        .location_choice
-          .content
-            =fa_icon 'clock-o'
-            %span
-              = Time.now.strftime("%d/%m/%y")
-              14:00
-            %span.edit Edit
-          %input{value: "#{Time.now.strftime("%d/%m/%y")} 14:00"}
-    %br
-    .visit_people
-      %label Who was present?
-      List of people in attendance goes here.
-      //      .single_person
-      //        .img img
-      //        .details
-      //          .name Dave Taylor
-      //          .relation Dad (32 years old)
-      //        .delete.button.negative
-      //          =fa_icon 'times'
-
-
-
-  .visit_input_card.card.full_width
+  .visit_input_card.visit_details_card.card.full_width
     %h3
       Visit Notes
     %hr
@@ -82,4 +46,67 @@
     %hr
     #agreed_actions_saved
       You have not saved any aggreed actions for this visit yet.
+
+
+  .visit_details_card.card.full_width
+    %h3 About this visit
+    %hr
+    .inner_container
+      .half
+        %label Where was this visit?
+        .location_choice.not_edit
+          .content
+            =fa_icon 'home'
+            %span The Taylor's home
+            %span.edit Edit
+          %input{value: "The Taylor's home"}
+      .half
+        %label When was this visit?
+        .location_choice.not_edit
+          .content
+            =fa_icon 'clock-o'
+            %span
+              = Time.now.strftime("%d/%m/%y")
+              14:00
+            %span.edit Edit
+          %input{value: "#{Time.now.strftime("%d/%m/%y")} 14:00"}
+    %br
+    .visit_people
+      %label Who was present?
+
+      .single_person
+        .img
+          =image_tag 'person_1'
+        .details
+          .name Dave Taylor
+          .relation Dad (32 years old)
+        .delete.button.negative
+          =fa_icon 'times'
+      .single_person
+        .img
+          =image_tag 'person_3'
+        .details
+          .name Rose Taylor
+          .relation Daughter (9 years old)
+        .delete.button.negative
+          =fa_icon 'times'
+      .single_person
+        .img
+          =image_tag 'person_2'
+        .details
+          .name Ben Taylor
+          .relation Son (2 years old)
+        .delete.button.negative
+          =fa_icon 'times'
+
+      .single_person
+        .breaker
+        .img
+          =image_tag 'person_4'
+        .details
+          .name Sarah Pitcher
+          .relation Support Worker
+        .delete.button.negative
+          =fa_icon 'times'
+    %br
 

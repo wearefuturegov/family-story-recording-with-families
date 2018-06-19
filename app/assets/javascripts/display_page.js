@@ -25,9 +25,14 @@ $.fn.displayPage = function() {
 
 
   $('.location_choice .content').click(function() {
+    $(this).closest('.not_edit').removeClass('not_edit');
     $(this).next('input').show().focus().select();
     $(this).hide();
   })
+
+  $('.single_person .delete').click(function() {
+    $(this).closest('.single_person').slideUp();
+  });
 };
 
 
