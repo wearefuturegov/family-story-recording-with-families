@@ -33,9 +33,38 @@
             %p My uncle wants to see the children
 
   .visit_details_card.card.full_width
-    %h3 Who was present at this visit?
+    %h3 About this visit
     %hr
-    %p List of people present here.
+    .inner_container
+      .half
+        %label Where was this visit?
+        .location_choice
+          .content
+            =fa_icon 'home'
+            %span The Taylor's home
+            %span.edit Edit
+          %input{value: "The Taylor's home"}
+      .half
+        %label When was this visit?
+        .location_choice
+          .content
+            =fa_icon 'clock-o'
+            %span
+              = Time.now.strftime("%d/%m/%y")
+              14:00
+            %span.edit Edit
+          %input{value: "#{Time.now.strftime("%d/%m/%y")} 14:00"}
+    %br
+    .visit_people
+      %label Who was present?
+      List of people in attendance goes here.
+      //      .single_person
+      //        .img img
+      //        .details
+      //          .name Dave Taylor
+      //          .relation Dad (32 years old)
+      //        .delete.button.negative
+      //          =fa_icon 'times'
 
 
 

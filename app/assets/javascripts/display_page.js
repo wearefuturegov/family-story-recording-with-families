@@ -22,6 +22,12 @@ $.fn.displayPage = function() {
     });
   }
   //localStorage.removeItem("agreed_actions");
+
+
+  $('.location_choice .content').click(function() {
+    $(this).next('input').show().focus().select();
+    $(this).hide();
+  })
 };
 
 

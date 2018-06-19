@@ -32,6 +32,16 @@
   }
 }
 
+.delete.button {
+  margin-left: 5px;
+  padding: 10px 15px;
+  vertical-align: top;
+  background-color: rgba($red, 0.7);
+  &:hover {
+    background-color: rgba($red, 1);
+  }
+}
+
 #agreed_actions_saved .saved_action, .single_action {
   margin-bottom: 10px;
 
@@ -47,15 +57,7 @@
       border-color: $primary-color;
     }
   }
-  .delete.button {
-    margin-left: 5px;
-    padding: 10px 15px;
-    vertical-align: top;
-    background-color: rgba($red, 0.7);
-    &:hover {
-      background-color: rgba($red, 1);
-    }
-  }
+
   select {
     display: inline-block;
     width: auto;
@@ -78,5 +80,41 @@
     margin-right: 10px;
     margin-bottom: -6px;
     border: 2px solid $primary-color;
+  }
+}
+
+
+.location_choice {
+  .content {
+    cursor: pointer;
+  }
+  .edit {
+    margin-left: 5px;
+    font-size: 13px;
+    color: $primary-color;
+    text-decoration: underline;
+    cursor: pointer;
+  }
+  input {
+    display: inline-block;
+    display: none;
+    width: 250px;
+  }
+}
+
+.visit_people {
+  .single_person {
+    .img, .details, .delete {
+      display: inline-block;
+      vertical-align: middle;
+    }
+    .details {
+      .name {
+
+      }
+      .relation {
+        
+      }
+    }
   }
 }
