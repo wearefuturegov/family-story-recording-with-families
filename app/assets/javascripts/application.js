@@ -16,4 +16,7 @@
 //= require trumbowyg
 //= require trumbowyg_upload
 //= require geff/accordion
+//= require not_successful
+//= require meetings_page
+//= require display_page
 //= require public

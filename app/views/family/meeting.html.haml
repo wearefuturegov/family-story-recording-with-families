@@ -16,7 +16,7 @@
       14:00
       %span.edit_link
         =link_to 'Edit', family_meeting_details_path
-
+    %hr
     .accordion
       .accord-single
         .accord-toggle
@@ -36,9 +36,11 @@
   .visit_input_card.card.full_width
     %h3
       Visit Notes
-      #save_visit.button
-        =fa_icon "check"
-        %span Save
+      =link_to family_meeting_save_path do
+        #save_visit.button
+          =fa_icon "check"
+          Save
+          %span Visit
     %hr
     #trumbowyg
 

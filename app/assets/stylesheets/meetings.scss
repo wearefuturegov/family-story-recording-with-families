@@ -25,6 +25,11 @@
   padding: 10px 15px 10px 13px;
   float: right;
   margin-top: -4px;
+  span {
+    @include mobile {
+      display: none;
+    }
+  }
 }
 
 .single_action {

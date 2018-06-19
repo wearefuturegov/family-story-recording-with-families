@@ -7,7 +7,7 @@ $(document).ready(function() {
     autogrow: true,
     btns: ['strong', 'em', '|', 'upload'],
     plugins: {
-      // Add imagur parameters to upload plugin
+      // Add imgur parameters to upload plugin
       upload: {
         serverPath: 'https://api.imgur.com/3/image',
         fileFieldName: 'image',
@@ -19,37 +19,12 @@ $(document).ready(function() {
     }
   });
 
+  $('#actions_display').displayPage();
+
+  $('#actions_container').meetingsPage();
 
 
 
+  $('#not_successful').notSuccessful();
 
-  $('#add_action').click(function() {
-    var action = '<div class="single_action"><select><option>Dave</option><option>Sarah</option><option>Other</option></select><input type="text"><div class="delete button negative"><i class="fa fa-trash"></i></div></div>';
-    $('#actions_container').append(action);
-  });
-
-  $('#actions_container').on("click", '.single_action .delete', function() {
-    $(this).closest('.single_action').remove();
-  });
-
-
-
-  $('#not_successful').click(function(){
-
-    // IN REALITY - this would only be used for mobile, we would want an if statement here that pulls up a better designed widget for desktop
-    var not_successful = prompt("Unsuccessful contact with " + $('#visit_family_name').html(), "Add a note...");
-    var today = new Date();
-    var date = today.getDate()+'/'+(today.getMonth()+1)+'/'+today.getFullYear();
-    var time = today.getHours() + ":" + ('0' + today.getMinutes()).slice(-2);
-    var dateTime = time+' '+date;
-
-
-    if (not_successful != null) {
-      if (not_successful != "Add a note..." || not_successful != "") {
-        $('#visit_contact').html('Visit recorded unsuccessful at ' + dateTime + " - <strong>" + not_successful + "</strong>");
-      } else {
-        $('#visit_contact').html('Visit recorded unsuccessful at ' + dateTime);
-      }
-    }
-  });
 });

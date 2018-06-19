@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   get 'family/meeting'
+  get 'family/meeting_save'
   get 'family/meeting_details'
   get 'family/details'
 
