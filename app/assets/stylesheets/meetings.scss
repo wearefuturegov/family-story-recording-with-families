@@ -32,8 +32,13 @@
   }
 }
 
-.single_action {
+#agreed_actions_saved .saved_action, .single_action {
   margin-bottom: 10px;
+
+  .action_name {
+    font-weight: 600;
+  }
+
   input {
     display: inline-block;
     box-shadow: none;

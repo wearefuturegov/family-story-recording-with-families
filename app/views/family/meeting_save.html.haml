@@ -17,15 +17,20 @@
       %span.edit_link
         =link_to 'Edit', family_meeting_details_path
     %hr
-    .inner_container
-      .half
-        .bold Visit purpose
-        %ul.default
-          %li Housing
-          %li School attendance
-      .half
-        .bold Family's input
-        %p My uncle wants to see the children
+    .accordion
+      .accord-single
+        .accord-toggle
+          Visit details
+          =fa_icon "chevron-down"
+        .accord-cont.inner_container
+          .half
+            .bold Visit purpose
+            %ul.default
+              %li Housing
+              %li School attendance
+          .half
+            .bold Family's input
+            %p My uncle wants to see the children
 
   .visit_details_card.card.full_width
     %h3 Who was present?
@@ -38,12 +43,14 @@
     %h3
       Visit Notes
     %hr
-    %p Written notes would go here.
+    #visit_notes_saved
+      You have not written any notes for this visit yet.
 
     %br
 
     %h3 Agreed actions
     #actions_display
     %hr
-    %p Actions made display here.
+    #agreed_actions_saved
+      You have not saved any aggreed actions for this visit yet.
 

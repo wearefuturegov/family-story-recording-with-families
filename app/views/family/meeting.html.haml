@@ -36,11 +36,10 @@
   .visit_input_card.card.full_width
     %h3
       Visit Notes
-      =link_to family_meeting_save_path do
-        #save_visit.button
-          =fa_icon "check"
-          Save
-          %span Visit
+      =link_to family_meeting_save_path, class: 'button', id: 'save_visit' do
+        =fa_icon "check"
+        Save
+        %span Visit
     %hr
     #trumbowyg
 
