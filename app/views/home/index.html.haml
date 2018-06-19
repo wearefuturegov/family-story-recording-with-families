@@ -27,14 +27,14 @@
 
         %h3
           Your next scheduled visit -
-          =link_to family_meeting_details_path do
+          =link_to family_visit_details_path do
             = Time.now.strftime("%d/%m/%y")
             14:00
       .half
         .bold
           Visit purpose
           %span.edit_link
-            =link_to 'Edit', family_meeting_details_path
+            =link_to 'Edit', family_visit_details_path
         %ul.default
           %li Housing
           %li School attendance
@@ -44,7 +44,7 @@
 
       #visit_contact.center.full_width
         %h3 Was there a successful contact?
-        =link_to 'Yes', family_meeting_path, class: 'button'
+        =link_to 'Yes', family_visit_path, class: 'button'
         .button#not_successful No
 
   .family_list_small.card.full_width

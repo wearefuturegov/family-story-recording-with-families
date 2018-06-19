@@ -5,9 +5,9 @@
 
 .container
   .breadcrumbs.full_width
-    =link_to root_path do
+    =link_to family_visit_path do
       =fa_icon "chevron-left"
-      Return to your cases
+      Edit visit notes
 
   .visit_details_card.card.full_width
     %h3
@@ -15,7 +15,7 @@
       = Time.now.strftime("%d/%m/%Y")
       14:00
       %span.edit_link
-        =link_to 'Edit', family_meeting_details_path
+        =link_to 'Edit', family_visit_details_path
     %hr
     .accordion
       .accord-single
@@ -32,20 +32,25 @@
             .bold Family's input
             %p My uncle wants to see the children
 
+  .visit_details_card.card.full_width
+    %h3 Who was present at this visit?
+    %hr
+    %p List of people present here.
+
+
 
   .visit_input_card.card.full_width
     %h3
       Visit Notes
-      =link_to family_meeting_save_path, class: 'button', id: 'save_visit' do
-        =fa_icon "check"
-        Save
-        %span Visit
     %hr
-    #trumbowyg
+    #visit_notes_saved
+      You have not written any notes for this visit yet.
 
     %br
 
     %h3 Agreed actions
+    #actions_display
     %hr
-    %form#actions_container.actions_container
-    .button#add_action Add action
+    #agreed_actions_saved
+      You have not saved any aggreed actions for this visit yet.
+

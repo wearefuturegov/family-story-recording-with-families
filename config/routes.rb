@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  get 'family/meeting'
-  get 'family/meeting_save'
-  get 'family/meeting_details'
+  get 'family/visit'
+  get 'family/visit_save'
+  get 'family/visit_details'
   get 'family/details'
 
   get 'home/index'
