@@ -36,10 +36,12 @@ $.fn.meetingsPage = function() {
     if($('.single_action').length) {
       var action_array = [];
       $('.single_action').each(function() {
-        action_array.push({
-          Person : $(this).find('select').val(),
-          Content : $(this).find('input').val()
-        });
+        if($(this).find('input').val()) {
+          action_array.push({
+            Person : $(this).find('select').val(),
+            Content : $(this).find('input').val()
+          });
+        }
       });
       localStorage.setItem("agreed_actions", JSON.stringify(action_array));
     }
