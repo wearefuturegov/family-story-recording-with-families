@@ -35,6 +35,8 @@ $.fn.displayPage = function() {
   $('#share_visit').click(function() {
     localStorage.removeItem("visit_notes");
     localStorage.removeItem("agreed_actions");
+    localStorage.setItem("visit_shared", 'true');
+    $('#action_sheet').show();
   });
 };
 

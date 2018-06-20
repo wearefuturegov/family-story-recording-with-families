@@ -27,4 +27,11 @@ $(document).ready(function() {
 
   $('#not_successful').notSuccessful();
 
+
+  var visit_shared = localStorage.getItem("visit_shared");
+
+  if (visit_shared != null) {
+    $('#alerts').slideDown().delay(2500).slideUp();
+    localStorage.removeItem("visit_shared");
+  }
 });
