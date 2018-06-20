@@ -28,7 +28,7 @@ $.fn.meetingsPage = function() {
     $(this).closest('.single_action').remove();
   });
 
-  $('#save_visit').click(function(e) {
+  $('.save_visit_btn').click(function(e) {
     e.preventDefault();
 
     localStorage.setItem("visit_notes", $('#trumbowyg').trumbowyg('html'));
@@ -45,7 +45,6 @@ $.fn.meetingsPage = function() {
       });
       localStorage.setItem("agreed_actions", JSON.stringify(action_array));
     }
-
     window.location = $(this).attr('href');
   });
 

@@ -36,7 +36,7 @@
   .visit_input_card.card.full_width
     %h3
       Visit Notes
-      =link_to family_visit_save_path, class: 'button', id: 'save_visit' do
+      =link_to family_visit_save_path, class: 'button save_visit_btn' do
         =fa_icon "check"
         Save
         %span Visit
@@ -52,7 +52,7 @@
     #add_action.button.secondary
       =fa_icon "plus"
       Add action
-    =link_to family_visit_save_path, class: 'button', id: 'save_visit' do
+    =link_to family_visit_save_path, class: 'button save_visit_btn' do
       =fa_icon "check"
       Save
       %span Visit
