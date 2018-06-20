@@ -39,3 +39,12 @@
     }
   }
 }
+
+@include mob_tab {
+  .third, .half {
+    margin-top: 15px;
+  }
+  .visit_details_card .accordion .accord-single .accord-cont {
+    margin-top: 0 !important;
+  }
+}
