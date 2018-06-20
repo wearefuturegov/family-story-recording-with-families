@@ -19,12 +19,13 @@
     margin-top: 0;
   }
 }
-
+h3 #save_visit {
+  margin-top: -4px;
+}
 
 #save_visit {
-  padding: 10px 15px 10px 13px;
+  // padding: 10px 15px 10px 13px;
   float: right;
-  margin-top: -4px;
   span {
     @include mobile {
       display: none;
@@ -40,6 +41,9 @@
   &:hover {
     background-color: rgba($red, 1);
   }
+  @include mobile {
+    padding: 10px 12px;
+  }
 }
 
 #agreed_actions_saved .saved_action, .single_action {
@@ -52,6 +56,8 @@
   input {
     display: inline-block;
     box-shadow: none;
+    width: 45%;
+    max-width: 350px;
     &:focus {
       box-shadow: none;
       border-color: $primary-color;
@@ -67,6 +73,18 @@
     background: transparent;
     width: 75px;
     -webkit-border-radius: 0px;
+    @include mobile {
+      background-image:
+      linear-gradient(45deg, transparent 50%, gray 50%),
+      linear-gradient(135deg, gray 50%, transparent 50%);
+      background-position:
+        calc(100% - 20px) 1em,
+        calc(100% - 15px) 1em;
+      background-size:
+        5px 5px,
+        5px 5px;
+      background-repeat: no-repeat;
+    }
     &:focus {
       outline: none;
       border-color: $primary-color;

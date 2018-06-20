@@ -1,6 +1,14 @@
 .button {
 
   &.secondary {
-    background-color: #888;
+    background-color: transparent;
+    box-shadow: inset 0px 0px 0px 2px $primary-color;
+    color: $primary-color;
+
+
+    &:hover {
+      color: #fff;
+      background-color: $primary-color;
+    }
   }
 }
