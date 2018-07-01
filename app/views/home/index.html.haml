@@ -36,8 +36,8 @@
       .half
         .bold
           Visit purpose
-          %span.edit_link
-            =link_to 'Edit', family_visit_details_path
+          / %span.edit_link
+          /   =link_to 'Edit', family_visit_details_path
         %ul.default
           %li Housing
           %li School attendance
@@ -46,9 +46,9 @@
         %p My uncle wants to see the children
 
       #visit_contact.center.full_width
-        %h3 Was there a successful contact?
-        =link_to 'Yes', family_visit_path, class: 'button'
-        .button#not_successful No
+        / %h3 Was there a successful contact?
+        =link_to 'Start visit note', family_visit_path, class: 'button'
+        / %a{href: '#', id: 'not_successful'} No
 
   .family_list_small.card.full_width
     .inner_container
